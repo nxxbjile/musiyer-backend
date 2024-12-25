@@ -36,7 +36,7 @@ export const getUserSongs = async (req, res) => {
     const { page = 1, limit = 20 } = req.query;
     try{
         var songs = await Song.find({username}).skip((page - 1)*limit).limit(limit); 
-        var total_songs = await Song.find({username}).countDocuments({username});
+        var total_songs = await Song.find({username}).countDocuments();
         var total_pages = Math.ceil(total_songs/limit);
 
         if(songs){

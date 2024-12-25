@@ -13,6 +13,6 @@ router.get('/:username/favorites/songs', getAllFavoriteSongs);      // get all t
 router.post("/",addNewUser);                                        // addNewUser
 router.post("/login", handleLogin);                                 // handle login
 router.delete("/:userId", deleteUser);                              // deleteUser
-router.put("/:userId", updateUser);                                 // updateUser
+router.patch("/:userId", updateUser);                                 // updateUser
 
 export default router;                              

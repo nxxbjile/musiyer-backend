@@ -8,6 +8,6 @@ router.get("/", getAllSongs);                               // get all songs
 router.get("/:songId", getSongById);                        // get a single song by id
 router.post("/", addNewSong);                               // add a new song
 router.delete("/:songId",verifyMware, deleteSong);          // delete a song
-router.put("/:songId", verifyMware, updateSong);            // update a song
+router.patch("/:songId", verifyMware, updateSong);            // update a song
 
 export default router;
