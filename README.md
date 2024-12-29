@@ -23,3 +23,5 @@ make the **.env** file according to the **.env.example**
 or
 `npm start` to start the build server
 
+# live on
+> https://musiyer.netlify.app 
